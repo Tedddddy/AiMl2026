@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.6.5)  7 JUN 2026 00:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.6.5)  8 JUN 2026 00:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1035,22 +1035,28 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 
 ] [6
 
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 117.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 117.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 117.
- [7
+] [7
 
 ] [8
 
+] [9
+
 ]
-Overfull \vbox (3.34119pt too high) detected at line 159
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 160.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 160.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 160.
+ [10
+
+] [11
+
+]
+Overfull \vbox (3.34119pt too high) detected at line 202
  []
 
-[9
+[12
 
 ]
 \openout4 = `CleanEasy.vrb'.
@@ -1062,16 +1068,10 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-Overfull \vbox (7.3088pt too high) detected at line 180
+Overfull \vbox (7.3088pt too high) detected at line 223
  []
 
-[10
-
-] [11
-
-] [12
-
-] [13
+[13
 
 ] [14
 
@@ -1093,7 +1093,13 @@ Overfull \vbox (7.3088pt too high) detected at line 180
 
 ] [23
 
- </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [24
+] [24
+
+] [25
+
+] [26
+
+ </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [27
 
 ]
 \tf@nav=\write6
@@ -1110,18 +1116,18 @@ Package rerunfilecheck Info: File `CleanEasy.out' has not changed.
 (rerunfilecheck)             Checksum: 5973C992F3E68D2145DEFCB50CBC2473;783.
  ) 
 Here is how much of TeX's memory you used:
- 33232 strings out of 480247
- 689951 string characters out of 5896152
- 1257405 words of memory out of 5000000
- 50379 multiletter control sequences out of 15000+600000
+ 33244 strings out of 480247
+ 690056 string characters out of 5896152
+ 1257631 words of memory out of 5000000
+ 50385 multiletter control sequences out of 15000+600000
  569208 words of font info for 97 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,15n,122p,437b,1475s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on CleanEasy.pdf (24 pages, 356517 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbras10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on CleanEasy.pdf (27 pages, 383382 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
+ 375 PDF objects out of 1000 (max. 8388607)
+ 290 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Motivation/Main results 4 Minutes}{3}{0}{1}
 \beamer@sectionintoc {2}{Preliminaries 5 Minutes}{6}{0}{2}
-\beamer@sectionintoc {4}{Key ideas sketched 15 Minutes}{19}{0}{3}
-\beamer@sectionintoc {5}{Open questions 1 Minute}{24}{0}{4}
+\beamer@sectionintoc {4}{Key ideas sketched 15 Minutes}{22}{0}{3}
+\beamer@sectionintoc {5}{Open questions 1 Minute}{27}{0}{4}
