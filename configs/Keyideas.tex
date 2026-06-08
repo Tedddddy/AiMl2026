@@ -1,0 +1,35 @@
+\begin{frame}{Main Theorem}
+    \begin{theorem}
+        Let $\Lambda$ be a unimodal logic with $\Lambda \in \{T,D\}$. Then the following holds:
+        \[
+            \Lambda \otimes \Lambda \otimes \Lambda + \Box p \to \Box_1\Box_2p \land \Box_2\Box_1p = \Lambda \times_n^+ \Lambda
+        \]
+    \end{theorem}
+    In the following we will sketch the proof for $\Lambda = T$.
+
+        \vspace{1.5cm}
+         We denote $T \otimes T \otimes T + \Box p \to \Box_1\Box_2p \land \Box_2\Box_1p$ as $T_3m$
+
+\end{frame}
+
+\begin{frame}{Proof steps}
+    \begin{itemize}
+        \item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$ \pause
+        \item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $F'$, i.e.
+        for any $w \in W$: $\tau(w) = \{U \mid R_1(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(F')$ \pause
+        \item construct neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
+    \end{itemize}
+    \vspace{0.5cm}
+    \[
+    {\transparent{0.3}
+    T \otimes T \otimes T
+    + (\Box p \to \Box_1\Box_2 p \land \Box_2\Box_1 p)
+    = T_3m
+    }
+    \]
+
+\end{frame}
+
+\begin{frame}{$Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$}
+    
+\end{frame}
