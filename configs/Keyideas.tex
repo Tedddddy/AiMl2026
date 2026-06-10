@@ -171,9 +171,11 @@
     \end{definition}
 \end{frame}
 
-\begin{frame}
-	\centering
-	\begin{tikzpicture}[scale=0.7]
+\begin{frame}{Example of $U_k(\alpha)$}
+	\begin{center}
+		
+
+	\begin{tikzpicture}[scale=2.5]
 		\node (K) at (0,0) [circle,fill=black,inner sep=1pt] {};
 		\node (A) at (-0.5,-1) [circle,fill=black,inner sep=1pt] {};
 		\node (B) at (-1,-1) [circle,fill=black,inner sep=1pt] {};
@@ -186,5 +188,93 @@
 		\draw[->, >=stealth, wred, thick] (K) -- (C);
 		\draw[->, >=stealth, wred, thick] (K) -- (D);
 		\draw[->, >=stealth, wred, thick] (K) -- (E);
+
+		\node  at (-0.2,0) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (-0.3,0) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (-0.4,0) [circle,fill=black,inner sep=0.2pt] {};
+
+		\node  at (0,0.1) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (0,0.2) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (0,0.3) [circle,fill=black,inner sep=0.2pt] {};
+
+		\node  at (0,-1.1) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (0,-1.2) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (0,-1.3) [circle,fill=black,inner sep=0.2pt] {};
+
+		\node  at (1.1,-1) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (1.2,-1) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (1.3,-1) [circle,fill=black,inner sep=0.2pt] {};
+
+		\node  at (-1.1,-1) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (-1.2,-1) [circle,fill=black,inner sep=0.2pt] {};
+		\node  at (-1.3,-1) [circle,fill=black,inner sep=0.2pt] {};
+
+		% label above the dot
+		\node at (0.2,0) {$1234$};
+		\node at (0.7,-1.1) {$12344$}; 
+
+
 	\end{tikzpicture}
+	\end{center}
+	
+
+	Let $\alpha = \star \star 12 \star 3 \star 4 \star \star^\omega \in X$. Then $st(\alpha) = 9$. Let's consider $U_9(\alpha)$.
+	Then 
+	\[
+		\star \star 12 \star 3 \star 4 \star 4 \star \star^\omega \in U_9(\alpha)
+	\]
+\end{frame}
+
+\begin{frame}{Definition of the neighborhood frame $N_w^r$}
+    \begin{definition}
+        Let $T_{\omega}^{r} = (\mathbb{N}^*, R)$ be the infinite branching depth tree. Then
+		\[
+		X = \{a_0a_1a_2... \in (\mathbb{N} \cup \star) \mid \exists N \in \mathbb{N} \mbox{ }\forall k\geq N: a_k = \star\}
+		\]
+		is the set of pseudo infinite sequences. 
+		Let $\alpha =a_0a_1a_2... \in X$. Then 
+		\[
+		U_k(\alpha) = \{\beta \in X \mid {\mbox{\emph{forg}}}(\alpha) R \mbox{}\mbox{\emph{forg}}(\beta) \mbox{ and } \alpha \mid_m = \beta \mid_m,	 \mbox{with } m = max(k,st(\alpha))\} 
+		\]
+		where \emph{forg}($\alpha$) deletes all $\star$ and $st(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$ \newline \newline
+		\textcolor{red}{We define $N_\omega^r = (X,\tau)$ where $\tau: X \to 2^{2^X}$ with 
+			\[
+				\tau(\alpha) = \{U \subseteq X \mid \exists k \in \mathbb{N}: U_k(\alpha) \subseteq U\}
+			\]}
+			Note: $\tau$ is a filter and there is no smallest neighborhood
+		
+    \end{definition}
+	%Note: $\tau$ is a filter and there is no smallest neighborhood
+\end{frame}
+
+\begin{frame}
+	\begin{theorem}
+		Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = (\mathbb{N} \times \{0,1,2\}, \sigma_1, \sigma_2, \sigma)$ be two 
+		full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
+	\end{theorem} \pause
+
+		Proof sketch: We fix a bijection $h: \mathbb{N} \to \mathbb{N} \times \mathbb{N}$. Let $a = a_0a_1...$ and $b = b_0b_1... \in X$ We define
+
+			
+        %f(a, b) =
+       % \begin{cases}
+       % \star, & \text{if }a=b=\star,\\
+       % (a,1), & \text{if } b = \star, a\in \mathbb{N}, \\
+       % (b,2), & \text{if } a = \star, b\in \mathbb{N}, \\
+       % (h(a, b),0), & \text{otherwise}.
+    	%\end{cases}
+
+		\[
+				g: X \times X \to (\mathbb{N} \times \{0,1,2\} \cup \{\star\})^* \mbox{ with } g(a,b) = forg(f(a_0b_0)f(a_1b_1)f(a_2b_2)...) 
+		\]
+		\[
+      		  	f(a, b) =
+       			 \begin{cases}
+      			 \star, & \text{if }a=b=\star,\\
+       			 (a,1), & \text{if } b = \star, a\in \mathbb{N}, \\
+       			 (b,2), & \text{if } a = \star, b\in \mathbb{N}, \\
+       			 (h(a, b),0), & \text{otherwise}.
+    			\end{cases}
+		\]
+
 \end{frame}

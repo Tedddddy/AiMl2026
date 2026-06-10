@@ -1906,12 +1906,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cmbright/cmbras9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cmbright/cmbras8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cmbright/cmbrbs9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cmbright/cmbrbs8.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss8.tfm
 OUTPUT CleanEasy.nav
 OUTPUT CleanEasy.toc
 OUTPUT CleanEasy.snm
 INPUT CleanEasy.aux
 INPUT ./CleanEasy.out
 INPUT ./CleanEasy.out
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
@@ -1920,8 +1922,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbras10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbras8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrbs10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr10.pfb
