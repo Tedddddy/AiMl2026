@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1781107116 "/home/maik/studiumtud/Presentation/CleanEasy.tex" "CleanEasy.pdf" "CleanEasy" 1781107118
+["pdflatex"] 1781184889 "/home/maik/studiumtud/Presentation/CleanEasy.tex" "CleanEasy.pdf" "CleanEasy" 1781184891
   "/etc/texmf/web2c/texmf.cnf" 1764201471 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/maik/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1749077117 1405644 8beec9f80219283946f97b1e8cc91499 ""
   "/home/maik/studiumtud/Presentation/CleanEasy.tex" 1781043992 1922 fe94e80fea35a138ae20fca894175721 ""
@@ -294,11 +294,11 @@
   "/usr/share/texmf/tex/latex/lm/t1lmss.fd" 1256929440 1639 ba1c66ef577aa5cadc2c0fdc691a26ee ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764201481 4379155 98693266ff65f58d9f98aff394de12d2 ""
-  "CleanEasy.aux" 1781107118 4756 477e43892bd3d0cf9f0aba1076cdfd46 "pdflatex"
-  "CleanEasy.nav" 1781107118 2411 d4de8bb4653d9e9628fa1203eabcd931 "pdflatex"
-  "CleanEasy.out" 1781107118 748 2b8df8b0ded17b9d204a31bd424ce7cb "pdflatex"
+  "CleanEasy.aux" 1781184890 5185 867113b57f7642d6ece59ce7e440d25c "pdflatex"
+  "CleanEasy.nav" 1781184890 2690 8e24e864784aa209f1dbcdd3b255de06 "pdflatex"
+  "CleanEasy.out" 1781184890 748 2b8df8b0ded17b9d204a31bd424ce7cb "pdflatex"
   "CleanEasy.tex" 1781043992 1922 fe94e80fea35a138ae20fca894175721 ""
-  "configs/Keyideas.tex" 1781107114 12491 cfe41cc2da465abc1dbed459429c0650 ""
+  "configs/Keyideas.tex" 1781184889 15656 43f58e2adc735b7d4752d407fda555fc ""
   "configs/configs.tex" 1780659704 360 a6952f9514dbc350b7eb73f8517e39ec ""
   "configs/prelimanaries.tex" 1780926528 2549 9132444cac5e1d6d2bb3b02351197bd9 ""
   "configs/title_page.tex" 1780781719 489 b2e7b4bd7eb3ea8cedc45b83d9527f0f ""

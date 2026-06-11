@@ -247,9 +247,9 @@
 	%Note: $\tau$ is a filter and there is no smallest neighborhood
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Surjective bounded morphism}
 	\begin{theorem}
-		Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = (\mathbb{N} \times \{0,1,2\}, \sigma_1, \sigma_2, \sigma)$ be two 
+		Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$ be two 
 		full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
 	\end{theorem} \pause
 
@@ -277,4 +277,58 @@
     			\end{cases}
 		\]
 
+\end{frame}
+
+\begin{frame}{Surjective bounded morphism}
+	\begin{theorem}
+		Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$ be two 
+		full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
+
+		
+	\end{theorem}
+	%Pick $m > max\{st(\alpha),st(\beta)\}$.
+	\begin{itemize}
+		\item surjectivity and 
+		\item $R(g(\alpha,\beta)) \subseteq g(U_m(\alpha) \times U_m(\beta)) \subseteq g(U)$ are not hard to see
+	\end{itemize}
+		\vspace{1cm}
+	    {\transparent{0.3}
+			Note: $\tau(x,y) = \{U \mid \exists k,j \in \mathbb{N}: U_k(x) \times U_j(y) \subseteq U\}, \sigma(x) = \{U \mid R(x) \subseteq U\}$.
+
+   		2nd cond: for all $1 \le i \le k$, for all $w \in W$ and all $U \in \tau_i(w)$, there is a $V\in \sigma_i(f(w))$ with $V = f(U)$ 
+
+    	}
+
+\end{frame}
+
+\begin{frame}{Surjective bounded morphism}
+		\begin{theorem}
+		Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$ be two 
+		full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
+		\end{theorem}
+		Pick $m > max\{st(\alpha),st(\beta)\}$ and set $U:= U_m(\alpha) \times U_m(\beta)$. Then 
+		\[
+			g(U) = g(U_m(\alpha) \times U_m(\beta)) \subseteq R(g(\alpha,\beta)) \subseteq V
+		\]
+
+		{\transparent{0.3}
+		Note: $\tau(x,y) = \{U \mid \exists k,j \in \mathbb{N}: U_k(x) \times U_j(y) \subseteq U\}, \sigma(x) = \{U \mid R(x) \subseteq U\}$\newline
+		3rd cond: for all $1 \le i \le k$, for all $w \in W$ and all $V \in \sigma_i(f(w))$, there exists $U \in \tau_i(w)$ such that $f(U) \subseteq V$ 
+		}
+\end{frame}
+
+\begin{frame}{Surjective bounded morphism}
+		\begin{theorem}
+			Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$ be two 
+			full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
+			\end{theorem}
+			Pick $m > max\{st(\alpha),st(\beta)\}$ and set $U:= U_m(\alpha) \times U_m(\beta)$. Then 
+			\[
+				g(U) = g(U_m(\alpha) \times U_m(\beta)) \subseteq R(g(\alpha,\beta)) \subseteq V
+			\]
+
+			Remark: if $m \ngtr max\{st(\alpha),st(\beta)\}$ then the subset relation fails. Example: Let $\alpha = 12\star^\omega, \beta = \star23\star^\omega$
+			and $m = 1$. Then $g(\alpha, \beta) = (1,1)h(2,2)(3,2)$. Assume $\alpha' = 123\star^\omega$. Hence,
+			$g(\alpha', \beta) = (1,1),h(2,2)h(3,3) \notin R(g(\alpha,\beta))$
+			\vspace{0.5cm}
 \end{frame}
