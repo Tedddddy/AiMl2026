@@ -19,6 +19,7 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{tikz}
+\usetikzlibrary{positioning, shapes, arrows, calc, decorations.pathreplacing, arrows.meta, backgrounds, patterns, overlay-beamer-styles}
 \usepackage{etoolbox}
 \usepackage{animate}
 \usepackage{xcolor}
@@ -48,15 +49,13 @@
 
 \begin{document}
 
+\input{configs/title_page.tex}
 
 
-\section{Motivation/Main results 4 Minutes}
+
+
 
 \input{configs/prelimanaries.tex}
-
-
-
-\section{Key ideas sketched 15 Minutes}
 
 \input{configs/Keyideas.tex}
 
@@ -65,7 +64,5 @@
 %   \bibliography{reference.bib}
 %   \bibliographystyle{apalike}
 % \end{frame}
-
-\section{Open questions 1 Minute}
 
 \end{document}
