@@ -19,7 +19,6 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{tikz}
-\usetikzlibrary{positioning, shapes, arrows, calc, decorations.pathreplacing, arrows.meta, backgrounds, patterns, overlay-beamer-styles}
 \usepackage{etoolbox}
 \usepackage{animate}
 \usepackage{xcolor}
@@ -49,13 +48,17 @@
 
 \begin{document}
 
-\input{configs/title_page.tex}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
 
-
+\input{configs/motivation.tex}
 
 
 
 \input{configs/prelimanaries.tex}
+
+
 
 \input{configs/Keyideas.tex}
 
@@ -64,5 +67,6 @@
 %   \bibliography{reference.bib}
 %   \bibliographystyle{apalike}
 % \end{frame}
+
 
 \end{document}
