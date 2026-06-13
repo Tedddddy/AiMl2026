@@ -11,48 +11,65 @@
          We denote $T \otimes T \otimes T + \Box p \to \Box_1\Box_2p \land \Box_2\Box_1p$ as $T_3m$
 
 \end{frame}
-
+    
 \begin{frame}{Proof steps}
     \begin{itemize}
         \item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$ 
-		\pause
-        \item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $F'$, i.e.
-        for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(F')$ \pause
-        \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
+		%\pause
+        %\item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $F'$, i.e.
+      %  for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(F')$ \pause
+      %  \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
     \end{itemize}
 
+	\vspace{2cm}
+\[ 
+	{\transparent{0.3} T \otimes T \otimes T + (\Box p \to \Box_1\Box_2 p \land \Box_2\Box_1 p) = T_3m }
+ \]
+
+
     
-    \[
-    {\transparent{0.3}
-    T \otimes T \otimes T
-    + (\Box p \to \Box_1\Box_2 p \land \Box_2\Box_1 p)
-    = T_3m
-    }
-    \]
-    
+
 	
 
 \end{frame}
 
-%\begin{frame}{Log$(T_{\omega,\omega,\omega}^{r,m}) = T_3m$}
- %   \begin{itemize}
-  %      \item Pick $\mathbb{C} = \{F \mid F \vDash T_3m\}$
-   % \end{itemize}
-    %\begin{Lemma}
-     %   $Log(\mathbb{C}) = T_3m$
-    %\end{Lemma}
-    %\begin{itemize}
-     %   \item By Sahlqvist Theorem
-    %\end{itemize} \pause
-%
- %%   \begin{Lemma}
-   %     $T_3m$ has the finite model property
-   % \end{Lemma}
-    
-   % \begin{itemize}
-    %    \item By Filtration Theorem
-   % \end{itemize}
-%\end{frame}
+\begin{frame}{Proof steps}
+	\begin{itemize}
+
+	\item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$
+    \item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $F'$, i.e.
+		for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(F')$ 
+			\end{itemize}
+\vspace{1.2cm}
+\[ 
+	{\transparent{0.3} T \otimes T \otimes T + (\Box p \to \Box_1\Box_2 p \land \Box_2\Box_1 p) = T_3m }
+ \]
+	
+\end{frame}
+
+\begin{frame}{Proof steps}
+	\begin{itemize}
+	    \item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$ 
+        \item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $F'$, i.e.
+       for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(F')$ 
+       \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
+		\end{itemize}
+
+		\[ 
+	{\transparent{0.3} T \otimes T \otimes T + (\Box p \to \Box_1\Box_2 p \land \Box_2\Box_1 p) = T_3m }
+ \]
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{frame}{Log($T_{\omega,\omega,\omega}^{r,m}) = T_3m$}
         \begin{figure}[t]
@@ -170,7 +187,7 @@
 		\[
 		U_k(\alpha) = \{\beta \in X \mid {\mbox{\emph{forg}}}(\alpha) R \mbox{}\mbox{\emph{forg}}(\beta) \mbox{ and } \alpha \mid_m = \beta \mid_m,	 \mbox{with } m = max(k,st(\alpha))\} 
 		\]
-		where \emph{forg}($\alpha$) deletes all $\star$ and $st(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$
+		where \emph{forg}($\alpha$) deletes all $\star$ and $ls(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$
 		%denote the set of pseudo infinite sequences
     \end{definition}
 \end{frame}
@@ -222,7 +239,7 @@
 	\end{center}
 	
 
-	Let $\alpha = \star \star 12 \star 3 \star 4 \star \star^\omega \in X$. Then $st(\alpha) = 9$. Let's consider $U_9(\alpha)$.
+	Let $\alpha = \star \star 12 \star 3 \star 4 \star \star^\omega \in X$. Then $ls(\alpha) = 9$. Let's consider $U_9(\alpha)$.
 	Then 
 	\[
 		\star \star 12 \star 3 \star 4 \star 4 \star \star^\omega \in U_9(\alpha)
@@ -240,7 +257,7 @@
 		\[
 		U_k(\alpha) = \{\beta \in X \mid {\mbox{\emph{forg}}}(\alpha) R \mbox{}\mbox{\emph{forg}}(\beta) \mbox{ and } \alpha \mid_m = \beta \mid_m,	 \mbox{with } m = max(k,st(\alpha))\} 
 		\]
-		where \emph{forg}($\alpha$) deletes all $\star$ and $st(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$ \newline \newline
+		where \emph{forg}($\alpha$) deletes all $\star$ and $ls(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$ \newline \newline
 		\textcolor{red}{We define $N_\omega^r = (X,\tau)$ where $\tau: X \to 2^{2^X}$ with 
 			\[
 				\tau(\alpha) = \{U \subseteq X \mid \exists k \in \mathbb{N}: U_k(\alpha) \subseteq U\}
@@ -257,7 +274,8 @@
 		full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
 	\end{theorem} \pause
 
-		Proof sketch: We fix a bijection $h: \mathbb{N} \to \mathbb{N} \times \mathbb{N}$. Let $a = a_0a_1...$ and $b = b_0b_1... \in X$ We define
+		Proof sketch: We fix a bijection $h: \mathbb{N} \to \mathbb{N} \times \mathbb{N}$. \pause 
+		Let $\alpha = a_0a_1...$ and $\beta = b_0b_1... \in X$ We define
 
 			
         %f(a, b) =
@@ -269,7 +287,7 @@
     	%\end{cases}
 
 		\[
-				g: X \times X \to (\mathbb{N} \times \{0,1,2\} \cup \{\star\})^* \mbox{ with } g(a,b) = forg(f(a_0b_0)f(a_1b_1)f(a_2b_2)...) 
+				g: X \times X \to (\mathbb{N} \times \{0,1,2\} \cup \{\star\})^* \mbox{ with } g(\alpha,\beta) = forg(f(a_0b_0)f(a_1b_1)f(a_2b_2)...) 
 		\]
 		\[
       		  	f(a, b) =

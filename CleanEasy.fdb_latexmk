@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1781305537 "/home/maik/studiumtud/Presentation/CleanEasy.tex" "CleanEasy.pdf" "CleanEasy" 1781305539
+["pdflatex"] 1781371607 "/home/maik/studiumtud/Presentation/CleanEasy.tex" "CleanEasy.pdf" "CleanEasy" 1781371612
   "/etc/texmf/web2c/texmf.cnf" 1764201471 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/maik/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1749077117 1405644 8beec9f80219283946f97b1e8cc91499 ""
   "/home/maik/studiumtud/Presentation/CleanEasy.tex" 1781295459 1881 9602bf5149ad6fc71ede7623dd5a4bc2 ""
@@ -294,14 +294,14 @@
   "/usr/share/texmf/tex/latex/lm/t1lmss.fd" 1256929440 1639 ba1c66ef577aa5cadc2c0fdc691a26ee ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764201481 4379155 98693266ff65f58d9f98aff394de12d2 ""
-  "CleanEasy.aux" 1781305539 3359 ea2c018b594ab30a475d076d4853fa03 "pdflatex"
-  "CleanEasy.nav" 1781305539 1687 022459c44fd6c906fbbe0e139c298496 "pdflatex"
-  "CleanEasy.out" 1781305538 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "CleanEasy.aux" 1781371611 3617 a69c29f7db3b18b02b509e664c716cb3 "pdflatex"
+  "CleanEasy.nav" 1781371611 1873 0317b394878af7ce4150b2618bde3971 "pdflatex"
+  "CleanEasy.out" 1781371609 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "CleanEasy.tex" 1781295459 1881 9602bf5149ad6fc71ede7623dd5a4bc2 ""
-  "configs/Keyideas.tex" 1781305536 15679 30dcc96a29c46932ea56ddaed5455442 ""
+  "configs/Keyideas.tex" 1781370703 16609 44ff2ea9c1be8d2bbb1d0849d2c4d45e ""
   "configs/configs.tex" 1780659704 360 a6952f9514dbc350b7eb73f8517e39ec ""
   "configs/motivation.tex" 1781303445 1315 7bafd7f355b932732008bdbfef29dd8a ""
-  "configs/prelimanaries.tex" 1781304302 2527 a1dda5cee01f02201acd32ff4a7a81c8 ""
+  "configs/prelimanaries.tex" 1781371607 3164 2a097dc19d0e7c312fb8408567891b56 ""
   "configs/title_page.tex" 1780781719 489 b2e7b4bd7eb3ea8cedc45b83d9527f0f ""
   "theme//beamercolorthemeCleanEasy.sty" 1780659704 1473 5f51dc20695b07eff1ddc02f826886e1 ""
   "theme//beamerfontthemeCleanEasy.sty" 1780659704 1702 5bb2d73052b0bdee420eef66a73dc4d9 ""
