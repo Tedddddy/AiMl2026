@@ -3,13 +3,13 @@
 \begin{frame}{Neighbourhood frame}
   \begin{definition}
     
-    Let $X$ be a non-empty set and $k \geq 1$. A k-neighborhood frame (k-n-frame) is a pair $(X, \vec{\tau})$, where
-    $\vec{\tau} = (\tau_1,..., k)$ and each $\tau_i: X \to {2^2}^X$ assigns to every 
-    $x \in X$ a \emph{filter} $\tau_i(x)$ on $X$, i.e. 
+    Let $X$ be a non-empty set and $k \geq 1$. A k-neighborhood frame (n-frame) is a pair $(X, \tau)$, where
+     where $\tau : X \to 2^{2^X}$ assigns to every 
+    $x \in X$ a \emph{filter} $\tau(x)$ on $X$, i.e. 
     \begin{itemize}
       \item $\tau(x) \neq \emptyset$
       \item if $U \in \tau(x)$ and $U \subseteq V$ then $V \in \tau(x)$
-      \item if $U,V \in \tau(x)$ then $U \cup V \in \tau(x)$
+      \item if $U,V \in \tau(x)$ then $U \cap V \in \tau(x)$
     \end{itemize} 
   \end{definition}
 \end{frame}

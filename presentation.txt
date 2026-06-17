@@ -1,0 +1,29 @@
+Hello everyone. My name is Maik Thanh Nguyen and I am currently a master's student at the technische
+universität of dresden. In this talk, I would like to give some results on the modal logic of full
+products of neighborhood frames. Before that, I would Like to give you some 
+motivation and explain where the problems we study comes from. 
+
+As the title  suggests, we are concerned with Product of frames. The first products were studied for Kripke frames by Shehtman and Segeberg in the 70s. They introduced two accessibility relations namely the horizontal and vertical relation, which allow us to move In the first coordinate while the second coordinate is fixed and vice versa. 
+It is well known that the interaction axioms commutation and church rosser are valid on such products. Moreover, the logic of products of S4 frames equipped with horizontal and vertical relation, can be axiomatzied by a notation called fusion of S4 together with the interaction axioms.
+
+
+ A natural question arise from such results could be: does that also works for topological frames? 
+ 
+  The answer No. The paper "modal logics for products of topologies" by van Benthem, Bezhanishvili,
+  ten Cate and Sarenac showed that these interaction axioms can be falsified.
+  
+ The axiomatization of products of S4 with its horizontal and vertical topology is just S4 fusion S4. In the same paper, they also introduced a third toplogy which is called the standard topology, it means we are not fixing a coordinate, but rather going in both direction. Products equipped with three topologies are called full product. They proved that the full product of S4 spaces can be axiomatized by S4 fusion S4 fusion S4 + \Box p implies \Box_1p \and \Box_2p.
+ 
+  Inspired by that result we looked for a similar result but in the setting of Neighborhood semantics. In fact, We showed that the full neighborhood product of T can be axiomatzied by T fusion T fusion T + boxp implies box1 box2p and box2 box 1p. Similarily For D.
+
+Before we sketch the result, we introduce some notation by starting with the neighborhood frame.
+A neighorhood frame is a tuple with a domain X and a function tau that maps any point of the domain to some set of subsets of X. The subsets are also called neighborhood.
+
+
+
+
+
+
+
+
+
