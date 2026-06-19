@@ -1,8 +1,99 @@
 \begin{frame}{Motivation}
     \begin{itemize}
-        \item Product of Kripke frames were studied by Shehtman and Segerberg  in 70s\pause
-        \item $\Box_1 \Box_2p \leftrightarrow \Box_1\Box_2p$ (com) and $\lozenge_1 \Box_2 p \rightarrow \Box_2 \lozenge_1 p$ (chr) are valid \pause
-        \item $S4 \times S4 = S4 \otimes S4 + $ (com) $+$ (chr) \pause 
+        \setlength{\itemsep}{1em}
+        \item Product of Kripke frames were studied by Shehtman and Segerberg  in 70s 
+        \item<2-> $\Box_1 \Box_2p \leftrightarrow \Box_1\Box_2p$ (com) and $\lozenge_1 \Box_2 p \rightarrow \Box_2 \lozenge_1 p$ (chr) are valid
+        \item <3-> $S4 \times S4 = S4 \otimes S4 + $ (com) $+$ (chr) 
+    \end{itemize}
+
+		\centering
+        \vspace{2cm}
+	\begin{tikzpicture}[>=stealth, node distance=2cm, scale = 0.7]
+		
+		% ----------------------
+		% F1
+		% ----------------------
+		\node (x) at (-3,2.5) {\footnotesize$x$};
+		\node (y) at (-3,1) {\footnotesize$y$};
+		\draw[thick,->,sgreen] (x) to[bend left=12] (y);
+		\draw[thick,->,sgreen] (y) to[bend left=12] (x);
+		\node at (-2.5,1.75) {\footnotesize$F_1$};
+		
+
+		
+		% ----------------------
+		% F2
+		% ----------------------
+		\node (u) at (-4,0) {\footnotesize$u$};
+		\node (v) at (-2,0) {\footnotesize$v$};
+        \draw[thick,->,wred] (u) to[bend left=12] (v);
+		\draw[thick,->,wred] (v) to[bend left=12] (u);
+		\node at (-3,-0.5) {\footnotesize$F_2$};
+
+        \node at (3.4,2.7) {\footnotesize$F_1 \times F_2$};
+		
+		% ----------------------
+		% Product square
+		% ----------------------
+		\node (xu) at (0.5,2) {\footnotesize$(x,u)$};
+		\node (xv) at (6.5,2) {\footnotesize$(x,v)$};
+		\node (yu) at (0.5,0) {\footnotesize$(y,u)$};
+		\node (yv) at (6.5,0) {\footnotesize$(y,v)$};
+		
+		% R2 (horizontal)
+		\draw[thick,->,wred] (xu) to[bend left=7] node[below=-2.5pt, black] {\footnotesize $R_2$} (xv);
+		\draw[thick,->,wred] (xv) to[bend left=7]  (xu);
+		\draw[thick,->,wred] (yu) to[bend left=7]  (yv);
+		\draw[thick,->,wred] (yv) to[bend left=7] node[above = -3pt, black] {\footnotesize$R_2$} (yu);
+		
+		% R1 (vertical)
+		\draw[thick,->,sgreen] (xu) to[bend left=10]  (yu);
+		\draw[thick,->,sgreen] (yu) to[bend left=10] node[left, black] {\footnotesize$R_1$} (xu);
+		\draw[thick,->,sgreen] (xv) to[bend left=10] node[right, black] {\footnotesize$R_1$} (yv);
+		\draw[thick,->,sgreen] (yv) to[bend left=10]  (xv);
+		
+		
+	\end{tikzpicture}
+
+    
+\end{frame}
+
+\begin{frame}
+
+\centering
+\begin{tikzpicture}
+
+% First square
+\draw (0,0) rectangle (3,2);
+      \draw[red, thick] (1.5, 1.1) -- (1, 1.1);
+      \draw[red, thick] (0.9, 1.2) -- (0.5, 1.2);
+      \draw[red, thick] (1.4, 1.4) -- (1.8, 1.4);
+      \draw[red, thick] (1.4, 1.8) -- (1.8, 1.8);
+      \draw[red, thick] (0.6, 1.8) -- (1, 1.8);
+      \draw[red, thick] (0.8, 0.5) -- (1.4, 0.5);
+      \draw[red, thick] (1.7, 1.1) -- (2.4, 1.1);
+      \draw[red, thick] (1.5, 0.7) -- (2.1, 0.7);
+
+% Second square
+\draw (5,0) rectangle (8,2);
+      \draw[red, thick] (1,1.5) -- (1,1);
+      \draw[red, thick] (1.2, 0.9) -- (1.2, 0.5);
+      \draw[red, thick] (1.4, 1.4) -- (1.4, 1.8);
+      \draw[red, thick] (1.9, 1.4) -- (1.9, 1.8);
+      \draw[red, thick] (1.9, 0.6) -- (1.9, 1);
+      \draw[red, thick] (0.5, 0.8) -- (0.5, 1.4);
+      \draw[red, thick] (2.3, 0.2) -- (2.3, 0.9 );
+      \draw[red, thick] (2.6, 1.1) -- (2.6, 1.8 );
+
+\end{tikzpicture}
+
+\end{frame}
+
+
+\begin{frame}{Motivation}
+    \setlength{\itemsep}{1em}
+    \begin{itemize}
+
         \item (com) and (chr) fails on products of topological frames \pause
         \item $S4 \times_t S4 = S4 \otimes S4$ \pause
         \item $S4 \times_t^+ S4 = S4 \otimes S4 \otimes S4 + \Box p \to \Box_1p \land \Box_2p$ 
