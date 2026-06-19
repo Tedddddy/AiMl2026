@@ -35,10 +35,11 @@
 
 \begin{frame}{Proof steps}
 	\begin{itemize}
+	\setlength{\itemsep}{1em}
 
 	\item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$
-    \item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $F'$, i.e.
-		for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(F')$ 
+    \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
+
 			\end{itemize}
 \vspace{1.2cm}
 \[ 
@@ -49,10 +50,13 @@
 
 \begin{frame}{Proof steps}
 	\begin{itemize}
+		\setlength{\itemsep}{1em}
 	    \item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$ 
-        \item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $F'$, i.e.
-       for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(F')$ 
-       \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
+	    \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ 
+		with $Log(N_\omega^r) = T$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
+        \item Keynote: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $N(F)$, i.e.
+       for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(N(F))$ 
+
 		\end{itemize}
 
 		\[ 
@@ -268,59 +272,93 @@
 	%Note: $\tau$ is a filter and there is no smallest neighborhood
 \end{frame}
 
-\begin{frame}{Surjective bounded morphism}
+\begin{frame}[t]{Surjective bounded morphism}
+	
+	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$\pause
 	\begin{theorem}
-		Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$ be two 
-		full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
-	\end{theorem} \pause
+	 There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. 
+	\end{theorem}
+	Note: $Log(N_w^r) = T$ and hence $Log(N_w^r \times_n^+ N_w^r) \in T \times_n^+ T$ 
 
-		Proof sketch: We fix a bijection $h: \mathbb{N} \to \mathbb{N} \times \mathbb{N}$. \pause 
-		Let $\alpha = a_0a_1...$ and $\beta = b_0b_1... \in X$ We define
 
-			
-        %f(a, b) =
-       % \begin{cases}
-       % \star, & \text{if }a=b=\star,\\
-       % (a,1), & \text{if } b = \star, a\in \mathbb{N}, \\
-       % (b,2), & \text{if } a = \star, b\in \mathbb{N}, \\
-       % (h(a, b),0), & \text{otherwise}.
-    	%\end{cases}
-
-		\[
-				g: X \times X \to (\mathbb{N} \times \{0,1,2\} \cup \{\star\})^* \mbox{ with } g(\alpha,\beta) = forg(f(a_0b_0)f(a_1b_1)f(a_2b_2)...) 
-		\]
-		\[
-      		  	f(a, b) =
-       			 \begin{cases}
-      			 \star, & \text{if }a=b=\star,\\
-       			 (a,1), & \text{if } b = \star, a\in \mathbb{N}, \\
-       			 (b,2), & \text{if } a = \star, b\in \mathbb{N}, \\
-       			 (h(a, b),0), & \text{otherwise}.
-    			\end{cases}
-		\]
 
 \end{frame}
 
-\begin{frame}{Surjective bounded morphism}
+
+\begin{frame}[t]{Surjective bounded morphism}
+	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\}^*, \sigma_1, \sigma_2, \sigma)$.
 	\begin{theorem}
-		Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$ be two 
-		full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
+	There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. 
+	\end{theorem}
+	Proof sketch: We fix a bijection $h: \mathbb{N} \to \mathbb{N} \times \mathbb{N}$. \pause
+			\[
+				g: X \times X \to (\mathbb{N} \times \{0,1,2\} \cup \{\star\})^* 
+		\] \pause
+\vspace{-0.4cm}
+			\[
+\begin{array}{cccccc}
+\alpha &= \star & 1 & 2 & \star & \star^\omega\\
+\beta  &= 3     & \star & 7 & \star & \star^\omega\\
+\hline \pause
+g'(\alpha,\beta) &= (3,2) & (1,0) & (h(7,2),0) & \star & \star^\omega
+\end{array}
+\]
+ \pause
+
+
+Then $g(\alpha,\beta) = (3,2)(1,0) h((7,2),0)$
+
+	
+\end{frame}
+
+
+
+
+
+\begin{frame}{Surjective bounded morphism}
+	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\}^*, \sigma_1, \sigma_2, \sigma)$ 
+	\begin{theorem}
+		
+		There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$.
 
 		
 	\end{theorem}
 	%Pick $m > max\{st(\alpha),st(\beta)\}$.
 	\begin{itemize}
 		\item surjectivity and 
-		\item $R(g(\alpha,\beta)) \subseteq g(U_m(\alpha) \times U_m(\beta)) \subseteq g(U)$ are not hard to see
+		\item $R(g(\alpha,\beta)) \subseteq g(U_k(\alpha) \times U_j(\beta)) \subseteq g(U)$ for some $k,j \in \mathbb{N}$
 	\end{itemize}
 		\vspace{1cm}
 	    {\transparent{0.3}
 			Note: $\tau(x,y) = \{U \mid \exists k,j \in \mathbb{N}: U_k(x) \times U_j(y) \subseteq U\}, \sigma(x) = \{U \mid R(x) \subseteq U\}$.
 
    		2nd cond: for all $1 \le i \le k$, for all $w \in W$ and all $U \in \tau_i(w)$, there is a $V\in \sigma_i(f(w))$ with $V = f(U)$ 
-
+			
     	}
 
+\end{frame}
+
+\begin{frame}{Surjective bounded morphism}
+
+
+$g(\alpha,\beta) = (3,2)(1,0) h((7,2),0) \textcolor{red}{R} \,(3,2)(1,0) h((7,2),0) \textcolor{red}{(h(6,7),0)}$
+
+\[
+\begin{array}{ccccccc}
+\alpha' &= \star & 1 & 2 & \star & \textcolor{red}{6} & \star^\omega\\
+\beta'  &= 3     & \star & 7 & \star & \textcolor{red}{7} & \star^\omega\\
+\hline 
+g'(\alpha,\beta) &= (3,2) & (1,0) & (h(7,2),0) & \star & \textcolor{red}{(h(6,7),0)}& \star^\omega
+\end{array}
+\]
+\vspace{0.5cm}
+
+{\transparent{0.3} 
+	Claim: $R(g(\alpha,\beta)) \subseteq g(U_k(\alpha) \times U_j(\beta)) \subseteq g(U)$ for some $k,j \in \mathbb{N}$	}
+
+
+
+	
 \end{frame}
 
 \begin{frame}{Surjective bounded morphism}
@@ -337,20 +375,4 @@
 		Note: $\tau(x,y) = \{U \mid \exists k,j \in \mathbb{N}: U_k(x) \times U_j(y) \subseteq U\}, \sigma(x) = \{U \mid R(x) \subseteq U\}$\newline
 		3rd cond: for all $1 \le i \le k$, for all $w \in W$ and all $V \in \sigma_i(f(w))$, there exists $U \in \tau_i(w)$ such that $f(U) \subseteq V$ 
 		}
-\end{frame}
-
-\begin{frame}{Surjective bounded morphism}
-		\begin{theorem}
-			Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$ be two 
-			full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
-			\end{theorem}
-			Pick $m > max\{st(\alpha),st(\beta)\}$ and set $U:= U_m(\alpha) \times U_m(\beta)$. Then 
-			\[
-				g(U) = g(U_m(\alpha) \times U_m(\beta)) \subseteq R(g(\alpha,\beta)) \subseteq V
-			\]
-
-			Remark: if $m \ngtr max\{st(\alpha),st(\beta)\}$ then the subset relation fails. Example: Let $\alpha = 12\star^\omega, \beta = \star23\star^\omega$
-			and $m = 1$. Then $g(\alpha, \beta) = (1,1)h(2,2)(3,2)$. Assume $\alpha' = 123\star^\omega$. Hence,
-			$g(\alpha', \beta) = (1,1),h(2,2)h(3,3) \notin R(g(\alpha,\beta))$
-			\vspace{0.5cm}
 \end{frame}
