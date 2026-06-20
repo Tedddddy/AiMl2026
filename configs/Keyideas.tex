@@ -38,7 +38,7 @@
 	\setlength{\itemsep}{1em}
 
 	\item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$
-    \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
+    \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ with $Log(N_\omega^r) = T$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
 
 			\end{itemize}
 \vspace{1.2cm}
@@ -362,9 +362,10 @@ g'(\alpha,\beta) &= (3,2) & (1,0) & (h(7,2),0) & \star & \textcolor{red}{(h(6,7)
 \end{frame}
 
 \begin{frame}{Surjective bounded morphism}
+			Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$
 		\begin{theorem}
-		Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$ be two 
-		full product frames. Then there is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
+ be two 
+		There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
 		\end{theorem}
 		Pick $m > max\{st(\alpha),st(\beta)\}$ and set $U:= U_m(\alpha) \times U_m(\beta)$. Then 
 		\[
@@ -375,4 +376,8 @@ g'(\alpha,\beta) &= (3,2) & (1,0) & (h(7,2),0) & \star & \textcolor{red}{(h(6,7)
 		Note: $\tau(x,y) = \{U \mid \exists k,j \in \mathbb{N}: U_k(x) \times U_j(y) \subseteq U\}, \sigma(x) = \{U \mid R(x) \subseteq U\}$\newline
 		3rd cond: for all $1 \le i \le k$, for all $w \in W$ and all $V \in \sigma_i(f(w))$, there exists $U \in \tau_i(w)$ such that $f(U) \subseteq V$ 
 		}
+\end{frame}
+
+\begin{frame}{Future works}
+	
 \end{frame}
