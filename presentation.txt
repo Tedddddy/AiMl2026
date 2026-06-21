@@ -10,9 +10,9 @@ It is well known that the interaction axioms commutation and church rosser are v
  A natural question arise from such results could be: does that also works for topological frames? 
  
   The answer No. The paper "modal logics for products of topologies" by van Benthem, Bezhanishvili,
-  ten Cate and Sarenac showed that these interaction axioms can be falsified.
+  ten Cate and Sarenac showed that these interaction axioms can be falsified. They also introduced something called horizontal and vertical topology where any element U of the horizontal topology has the property that for any point in U we can find such a horizontal line and for vertical a vertical line.
   
- The axiomatization of products of S4 with its horizontal and vertical topology is just S4 fusion S4. In the same paper, they also introduced a third toplogy which is called the standard topology, it means we are not fixing a coordinate, but rather going in both direction. Products equipped with three topologies are called full product. They proved that the full product of S4 spaces can be axiomatized by S4 fusion S4 fusion S4 + \Box p implies \Box_1p \and \Box_2p.
+ With that, it was proven that the axiomatization of products of S4 equipped with horizontal and vertical topology is just S4 fusion S4. In the same paper, they also introduced a third topology which is called the standard topology, which is not only restricted to horizontal and vertical line but also , for example a square or cycle. Products equipped with three topologies are called full product. In that setting, They proved that the full product of S4 spaces can be axiomatized by S4 fusion S4 fusion S4 + \Box p implies \Box_1p \and \Box_2p.
  
   Inspired by that result we looked for a similar result but in the setting of Neighborhood semantics. In fact, We showed that the full neighborhood product of T can be axiomatzied by T fusion T fusion T + boxp implies box1 box2p and box2 box 1p. Similarily For D.
 
