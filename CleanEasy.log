@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.6.5)  22 JUN 2026 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.6.5)  22 JUN 2026 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1054,8 +1054,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [7
 
-] [8
-
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 153.
@@ -1063,28 +1061,30 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 153.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 153.
- [9
+ [8
 
-]) (./configs/prelimanaries.tex [10
+]) (./configs/prelimanaries.tex [9
+
+] [10
 
 ] [11
 
 ] [12
 
-] [13
+]) (./configs/Keyideas.tex [13
 
-]) (./configs/Keyideas.tex [14
+] [14
 
 ] [15
 
 ] [16
 
-] [17
-
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 181.
- [18
+ [17
+
+] [18
 
 ] [19
 
@@ -1092,7 +1092,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [21
 
-] [22
+]
+Overfull \vbox (7.23964pt too high) detected at line 273
+ []
+
+[22
 
 ]
 Overfull \vbox (7.23964pt too high) detected at line 273
@@ -1100,11 +1104,7 @@ Overfull \vbox (7.23964pt too high) detected at line 273
 
 [23
 
-]
-Overfull \vbox (7.23964pt too high) detected at line 273
- []
-
-[24
+] [24
 
 ] [25
 
@@ -1126,8 +1126,6 @@ Overfull \vbox (7.23964pt too high) detected at line 273
 
 ] [34
 
-] [35
-
 ])
 \tf@nav=\write6
 \openout6 = `CleanEasy.nav'.
@@ -1143,18 +1141,18 @@ Package rerunfilecheck Info: File `CleanEasy.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31459 strings out of 480247
- 618621 string characters out of 5896152
- 935235 words of memory out of 5000000
+ 31457 strings out of 480247
+ 618602 string characters out of 5896152
+ 935230 words of memory out of 5000000
  48618 multiletter control sequences out of 15000+600000
  549911 words of font info for 92 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,15n,122p,437b,891s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbras10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbras8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrbs10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on CleanEasy.pdf (35 pages, 377171 bytes).
+Output written on CleanEasy.pdf (34 pages, 375934 bytes).
 PDF statistics:
- 409 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
