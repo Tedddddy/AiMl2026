@@ -191,7 +191,7 @@
 		\[
 		U_k(\alpha) = \{\beta \in X \mid {\mbox{\emph{forg}}}(\alpha) R \mbox{}\mbox{\emph{forg}}(\beta) \mbox{ and } \alpha \mid_m = \beta \mid_m,	 \mbox{with } m = max(k,st(\alpha))\} 
 		\]
-		where \emph{forg}($\alpha$) deletes all $\star$ and $ls(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$
+		where \emph{forg}($\alpha$) deletes all $\star$ and $st(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$
 		%denote the set of pseudo infinite sequences
     \end{definition}
 \end{frame}
@@ -243,10 +243,10 @@
 	\end{center}
 	
 
-	Let $\alpha = \star \star 12 \star 3 \star 4 \star \star^\omega \in X$. Then $ls(\alpha) = 9$. Let's consider $U_9(\alpha)$.
+	Let $\alpha = \star \star 12 \star 3 \star 4 \star \star^\omega \in X$. Then $st(\alpha) = 9$. Let's consider $U_9(\alpha)$.
 	Then 
 	\[
-		\star \star 12 \star 3 \star 4 \star 4 \star \star^\omega \in U_9(\alpha)
+		\beta = \star \star 12 \star 3 \star 4 \star 4 \star \star^\omega \in U_9(\alpha)
 	\]
 \end{frame}
 
@@ -260,8 +260,8 @@
 		Let $\alpha =a_0a_1a_2... \in X$. Then 
 		\[
 		U_k(\alpha) = \{\beta \in X \mid {\mbox{\emph{forg}}}(\alpha) R \mbox{}\mbox{\emph{forg}}(\beta) \mbox{ and } \alpha \mid_m = \beta \mid_m,	 \mbox{with } m = max(k,st(\alpha))\} 
-		\]
-		where \emph{forg}($\alpha$) deletes all $\star$ and $ls(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$ \newline \newline
+		\] 
+		where \emph{forg}($\alpha$) deletes all $\star$ and $ls(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$ \newline \newline \pause
 		\textcolor{red}{We define $N_\omega^r = (X,\tau)$ where $\tau: X \to 2^{2^X}$ with 
 			\[
 				\tau(\alpha) = \{U \subseteq X \mid \exists k \in \mathbb{N}: U_k(\alpha) \subseteq U\}
@@ -274,11 +274,11 @@
 
 \begin{frame}[t]{Surjective bounded morphism}
 	
-	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$\pause
+	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\})^*, \sigma_1, \sigma_2, \sigma)$\pause
 	\begin{theorem}
 	 There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. 
 	\end{theorem}
-	Note: $Log(N_w^r) = T$ and hence $Log(N_w^r \times_n^+ N_w^r) \in T \times_n^+ T$ 
+	Note: $Log(N_w^r) = T$ and hence $Log(N_w^r \times_n^+ N_w^r) \supseteq T \times_n^+ T$ 
 
 
 
@@ -286,13 +286,13 @@
 
 
 \begin{frame}[t]{Surjective bounded morphism}
-	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\}^*, \sigma_1, \sigma_2, \sigma)$.
+	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = (\mathbb{N} \times \{0,1,2\}^*, \sigma_1, \sigma_2, \sigma)$.
 	\begin{theorem}
 	There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. 
 	\end{theorem}
-	Proof sketch: We fix a bijection $h: \mathbb{N} \to \mathbb{N} \times \mathbb{N}$. \pause
+	Proof sketch: We fix a bijection $h: \mathbb{N} \times \mathbb{N} \to \mathbb{N} $. \pause
 			\[
-				g: X \times X \to (\mathbb{N} \times \{0,1,2\} \cup \{\star\})^* 
+				g: X \times X \to (\mathbb{N} \times \{0,1,2\})^* 
 		\] \pause
 \vspace{-0.4cm}
 			\[
@@ -316,7 +316,7 @@ Then $g(\alpha,\beta) = (3,2)(1,0) h((7,2),0)$
 
 
 \begin{frame}{Surjective bounded morphism}
-	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\}^*, \sigma_1, \sigma_2, \sigma)$ 
+	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = (\mathbb{N} \times \{0,1,2\}^*, \sigma_1, \sigma_2, \sigma)$ 
 	\begin{theorem}
 		
 		There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$.

@@ -1,3 +1,5 @@
+Introduction ------------------------------------------------------------------------------
+
 Hello everyone. My name is Maik Thanh Nguyen and I am currently a master's student at the technische
 universität of dresden. In this talk, I would like to give some results on the modal logic of full
 products of neighborhood frames. Before that, I would Like to give you some 
@@ -16,6 +18,12 @@ It is well known that the interaction axioms commutation and church rosser are v
  
   Inspired by that result we looked for a similar result but in the setting of Neighborhood semantics. In fact, We showed that the full neighborhood product of T can be axiomatzied by T fusion T fusion T + boxp implies box1 box2p and box2 box 1p. Similarily For D.
 
+
+Definitions---------------------------------------------------------------------------------
+
+
+
+
 Before we sketch the result, we introduce some notation by starting with the neighborhood frame.
 A neighorhood frame is a tuple with a domain X and a function tau that maps any point of the domain to some set of subsets of X. The subsets are also called neighborhood. Furthermore, \tau is a filter neighborhood function, if our neighborhood set is not empty, it is upward closed that means For any neighborhood set the superset must also contain and it is closed under intersection. Note: a filter is in essential important because any filtered frame validates The logic K. 
 
@@ -30,7 +38,29 @@ Then the full product of these lambdas is lambda fusion lambda fusion lambda plu
 
 In the following we will give a sketch for the case T. For D it works similarily. We will also abbreviate the fusions with logic T by T3m to make the slides more readable.
 
+SKETCH-------------------------------------------------------------------------------------------------
+
+
 The main idea is just to construct an infinite branching and depth Kripke tree with three reflexive relation called T omega omega omega s.t. the logic of the tree is exactly T3m. Then we construct a neighborhood product frame N_ omega full product N_\omega where the logic of each N omega is T, s.t. there is a surjective bounded morphism from the neighborhood product to the Neighborhood frame version of our tree. Note: for any Kripke frame WE can construct a correspondent neighborhood frame with the same logic where the function tau maps Any x to a set that contains all supersets of the set that w can reach.
+
+So here you can see the tree, how it could look like. We can see three relation where each of them going into depth and branching infinitely. If we remember, our logic also contains the interaction axiom that means any R1 R2 and R2 R1 step must contain in R. Furtheremore we can derive \Boxp implies box1p and box2p from T3m. That means any R1 and R2 step must also be in R. With that construction, we can show by standard techniques SUCH as Sahlqvist theorem, Filtration theorem, unraveling and finite model property, the completeness property. This will be skipped here because the interesting part is the surjective bounded morphism in the neighborhood setting. The Idea is to construct a product where the neighborhood sets are somehow strictly decreasing that means there is no smallest neighborhood. So in essential There is no correspondent Kripke frame by our definition. And of course we somehow should be able to find a surjective bounded morphism to neighborhood tree frame. Okay, Let's see how we define it. We start by defining N omega subscript r to be reflexive and has no smallest neighborhood. 
+
+We pick an infinitely branching and depth tree with only one reflxive relation called T omega and define on it a set called pseudo infinite sequence where we considering infinite sequences containing natural numbers and stars. They are not arbitrarily chosen because for every sequence there must be some position N where the finite word before N contains the relevant informations and and the sequence after has Infinitely many stars. We will come up with an example soon. Now, on that set we can define the base of the neighborhood set by first picking some infinite sequence alpha. Then Uk (alpha) is the set of all infinite sequence beta s.t. forget(alpha) sees forget(beta) in the tree where forget means we deleting all stars and alpha and beta must be the same up to position m where m is the maximum of k or basically the first position N in alpha where anything after N is a star. That is what is meant by st(alpha). Okay that was quite a lot of definitions. In the following we will give an example. At first, we can see an excerpt of the tree where 1234 and 12344 are in relation. Now we assume alpha to be star star ... 
+
+Then the first position where anything after is a star is 9. Because this is The 9.th position.
+Lets consider U_9 (alpha). Then star star 12... is an element of U9 alpha. To see that we have to check two conditions. The first says that Forget(\alpha) sees Forget(beta) which is the case because if we remove all the stars we have 1234 and 12344. And by the second Condition, the word positions up to m must align where m is the maximum of st(alpha) and the k which is 9. So the words are indeed the same up to position 9.
+
+This is what we had and to complete the definition N omega is a tuple consists of the pseudo infinite set with function tau that maps any alpha to a set of neighborhoods that subsumes some U_k(alpha) for some k. The first observation is by that definition we get a filter. The second is there is no smallest neighborhood, because lets consider some neighborhoods U_k and U_j where k>j. Then any element contained in U_k must be also in Uj  by the fact that the relation is preserved and if the positions up to k are aligned then they are also aligned up to j because j is smaller. 
+
+Now we are ready main theorem. We assume the full product of the fresh introduced neighborhood N omega and the neighborhood tree. The claim is we can construct a surjective bounded morphism from the full product to the neighborhood tree. Note: the logic of N omega is T can be shown by a similiar construction given soon. And Hence, the logic of the full product of T is a subset of the logic of the full product.
+
+Okay, here comes the sketch. We will illustrate how g works using an example, since it makes the construction much easier to understand. first fix some bijection from N square to N.
+
+
+
+
+
+
 
 
 
