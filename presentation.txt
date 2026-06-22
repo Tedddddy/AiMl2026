@@ -25,7 +25,17 @@ Okay, here an example The blue shapes are basically the U's. We also fix the sec
 
 For the last definition, we introduce two ways how we combine two logics. At first, we have the fusion. We assume two unimodal logics L1, L2. The fusion of L1, L2 is defined as the multi modal logic K2 with two modal operators namely Box1 and Box2 plus the logic L1 where we replace any occurence of Box By Box1 and for L2 any Box by Box2. Furthermore, before we defined the two products on frames, now we can also define the full product of logics which is essentialy the logic of all X full product Y frames s.t. X validates L1 and Y validates L2. 
 
-For the notation of full product of logics we considering the set of full product of frames 
+With those definition we can claim our main theorem again. So we assume lambda to be the logic T or D.
+Then the full product of these lambdas is lambda fusion lambda fusion lambda plus \box p implies box1 box2p and box2 box 1p.
+
+In the following we will give a sketch for the case T. For D it works similarily. We will also abbreviate the fusions with logic T by T3m to make the slides more readable.
+
+The main idea is just to construct an infinite branching and depth Kripke tree with three reflexive relation called T omega omega omega s.t. the logic of the tree is exactly T3m. Then we construct a neighborhood product frame N_ omega full product N_\omega where the logic of each N omega is T, s.t. there is a surjective bounded morphism from the neighborhood product to the Neighborhood frame version of our tree. Note: for any Kripke frame WE can construct a correspondent neighborhood frame with the same logic where the function tau maps Any x to a set that contains all supersets of the set that w can reach.
+
+
+
+
+
 	
 
 
