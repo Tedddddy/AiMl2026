@@ -52,9 +52,21 @@ Lets consider U_9 (alpha). Then star star 12... is an element of U9 alpha. To se
 
 This is what we had and to complete the definition N omega is a tuple consists of the pseudo infinite set with function tau that maps any alpha to a set of neighborhoods that subsumes some U_k(alpha) for some k. The first observation is by that definition we get a filter. The second is there is no smallest neighborhood, because lets consider some neighborhoods U_k and U_j where k>j. Then any element contained in U_k must be also in Uj  by the fact that the relation is preserved and if the positions up to k are aligned then they are also aligned up to j because j is smaller. 
 
-Now we are ready main theorem. We assume the full product of the fresh introduced neighborhood N omega and the neighborhood tree. The claim is we can construct a surjective bounded morphism from the full product to the neighborhood tree. Note: the logic of N omega is T can be shown by a similiar construction given soon. And Hence, the logic of the full product of T is a subset of the logic of the full product.
+Now we are ready to sketch the main theorem. We assume the full product of the fresh introduced neighborhood N omega and the neighborhood tree. The numbers 0,1,2 basically denotes which relation we used to get to the node. 0 means we took a R step, 1 a R1 and 2 a R2 step.  The main claim is we can construct a surjective bounded morphism from the full product to the neighborhood tree. Note: the logic of N omega is T can be shown by a similiar construction given soon. And Hence, the logic of the full product of T is a subset of the logic of the full product.
 
-Okay, here comes the sketch. We will illustrate how g works using an example, since it makes the construction much easier to understand. first fix some bijection from N square to N.
+Okay, here comes the sketch. We will illustrate how g works using an example, since it makes the construction much easier to understand. But at first let us fix some bijection from N square to N. This is on the domains where g is defined. So here comes the example. Let us pick some elements of the infinite pseudo set say alpha and beta with these values. What we are doing is to compare the elements at position i. essentially there are 4 cases that can occur, Case 1: at position 0, If we have a natural number above here it is 3 and star , then we map it to (3,1).Case 2 is If we have a star and 1, then we map it to (1,2). Case 3: there are two natural numbers 2 and 7, then we map it to the Bijection h(2,7) and 0. And for the last case, two stars stay star. At last, we obtain g(alpha,beta) by just removing all stars. That means ...
+
+That example shows That for any element x of the tree, we can easily constructing alpha and beta s.t. 
+g(ALPHA,beta) = v. So surjectivity is guaranteed.
+
+A quick reminder, the standard function tau of x and y gives us all U's where some Uk(x) product Uk(y) is contained and sigma(x) gives the set of all supersets of R(x). For the second condition we have show for any element alpha, beta of the full product and all neighborhoods, that g(U) is in sigma. In other words R(g(alpha,beta) is contained in g(U). We only considering the tau to sigma and here it suffices to show R(g(alpha,beta) is a subset of g(Uk(alpha) product Uj(beta)) because the second Inclusion is by definition.
+
+Well, lets look at the last example, we can pick some successor of R(g(alpha,beta)) ending with (h(6,7),0). As argued before, we can construct alpha and beta' by just adding 6 and 7. And still alpha ' belongs to Uk(alpha) and beta' to Uj(beta). Hence the claim follows.
+
+For the last claim, we essentially pick a superset V that contains R(G(alpha,beta)) and we have to find preimage U s.t. g(U) is a subset of V. Thats basically written here and the claim follows if we show g(Um alpha product Um beta) is a subset of R(g(alpha,beta) for some m that is sufficently large. But the details are here a bit harder to explain.
+
+
+
 
 
 

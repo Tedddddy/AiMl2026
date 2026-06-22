@@ -297,16 +297,16 @@
 \vspace{-0.4cm}
 			\[
 \begin{array}{cccccc}
-\alpha &= \star & 1 & 2 & \star & \star^\omega\\
-\beta  &= 3     & \star & 7 & \star & \star^\omega\\
+\alpha &= 3 & \star & 2 & \star & \star^\omega\\
+\beta  &= \star     & 1& 7 & \star & \star^\omega\\
 \hline \pause
-g'(\alpha,\beta) &= (3,2) & (1,0) & (h(7,2),0) & \star & \star^\omega
+g'(\alpha,\beta) &= (3,1) & (1,2) & (h(7,2),0) & \star & \star^\omega
 \end{array}
 \]
  \pause
 
 
-Then $g(\alpha,\beta) = (3,2)(1,0) h((7,2),0)$
+Then $g(\alpha,\beta) = (3,1)(1,2) h((7,2),0)$
 
 	
 \end{frame}
@@ -330,9 +330,10 @@ Then $g(\alpha,\beta) = (3,2)(1,0) h((7,2),0)$
 	\end{itemize}
 		\vspace{1cm}
 	    {\transparent{0.3}
+
+   		2nd cond: for all $1 \le i \le k$, for all $w \in W$ and all $U \in \tau_i(w)$, there is a $V\in \sigma_i(g(w))$ with $V = g(U)$ 	
 			Note: $\tau(x,y) = \{U \mid \exists k,j \in \mathbb{N}: U_k(x) \times U_j(y) \subseteq U\}, \sigma(x) = \{U \mid R(x) \subseteq U\}$.
 
-   		2nd cond: for all $1 \le i \le k$, for all $w \in W$ and all $U \in \tau_i(w)$, there is a $V\in \sigma_i(f(w))$ with $V = f(U)$ 
 			
     	}
 
@@ -374,7 +375,7 @@ g'(\alpha,\beta) &= (3,2) & (1,0) & (h(7,2),0) & \star & \textcolor{red}{(h(6,7)
 
 		{\transparent{0.3}
 		Note: $\tau(x,y) = \{U \mid \exists k,j \in \mathbb{N}: U_k(x) \times U_j(y) \subseteq U\}, \sigma(x) = \{U \mid R(x) \subseteq U\}$\newline
-		3rd cond: for all $1 \le i \le k$, for all $w \in W$ and all $V \in \sigma_i(f(w))$, there exists $U \in \tau_i(w)$ such that $f(U) \subseteq V$ 
+		3rd cond: for all $1 \le i \le k$, for all $w \in W$ and all $V \in \sigma_i(f(w))$, there exists $U \in \tau_i(w)$ such that $g(U) \subseteq V$ 
 		}
 \end{frame}
 
