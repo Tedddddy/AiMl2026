@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1782346798 "/home/maik/studiumtud/Presentation/CleanEasy.tex" "CleanEasy.pdf" "CleanEasy" 1782346800
+["pdflatex"] 1782348232 "/home/maik/studiumtud/Presentation/CleanEasy.tex" "CleanEasy.pdf" "CleanEasy" 1782348234
   "/etc/texmf/web2c/texmf.cnf" 1764201471 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/maik/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1749077117 1405644 8beec9f80219283946f97b1e8cc91499 ""
   "/home/maik/studiumtud/Presentation/CleanEasy.tex" 1781295459 1881 9602bf5149ad6fc71ede7623dd5a4bc2 ""
@@ -298,14 +298,14 @@
   "/usr/share/texmf/tex/latex/lm/t1lmss.fd" 1256929440 1639 ba1c66ef577aa5cadc2c0fdc691a26ee ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764201481 4379155 98693266ff65f58d9f98aff394de12d2 ""
-  "CleanEasy.aux" 1782346800 4317 73ac83137597f956ff94daa0a99ff27b "pdflatex"
-  "CleanEasy.nav" 1782346800 2330 71042708a41544fbea09d606fd2adfcc "pdflatex"
-  "CleanEasy.out" 1782346798 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "CleanEasy.aux" 1782348234 4317 80beb52574cb35945d6d41e2e03ffab2 "pdflatex"
+  "CleanEasy.nav" 1782348234 2330 a9e89122aa2092eec93fa6963a935337 "pdflatex"
+  "CleanEasy.out" 1782348233 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "CleanEasy.tex" 1781295459 1881 9602bf5149ad6fc71ede7623dd5a4bc2 ""
-  "configs/Keyideas.tex" 1782252184 16632 33c48b5ce5e3d52f9560b044328c1631 ""
+  "configs/Keyideas.tex" 1782348232 16870 5bea845d6516d72e18b728f23b5c74a2 ""
   "configs/configs.tex" 1780659704 360 a6952f9514dbc350b7eb73f8517e39ec ""
-  "configs/motivation.tex" 1782343796 4721 a0c535ca07fb61187a826df6a3cf099e ""
-  "configs/prelimanaries.tex" 1782346798 4743 996eff12c14050e79c9ef7cdb799e5f8 ""
+  "configs/motivation.tex" 1782348145 4764 9db0be8370d80ea819e0fd5b8f61ebc7 ""
+  "configs/prelimanaries.tex" 1782346823 4751 70cffb5d8c127a79e6f45aef9ae18c1e ""
   "configs/title_page.tex" 1782342556 544 654bd2cda1f3f7bfb8759d4182a5f18e ""
   "theme//beamercolorthemeCleanEasy.sty" 1780659704 1473 5f51dc20695b07eff1ddc02f826886e1 ""
   "theme//beamerfontthemeCleanEasy.sty" 1780659704 1702 5bb2d73052b0bdee420eef66a73dc4d9 ""

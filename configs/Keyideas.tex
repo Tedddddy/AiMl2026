@@ -5,7 +5,8 @@
            \Lambda \times_n^+ \Lambda = \Lambda \otimes \Lambda \otimes \Lambda + \Box p \to \Box_1\Box_2p \land \Box_2\Box_1p 
         \]
     \end{theorem}
-    In the following we will sketch the proof for $\Lambda = T$.
+    In the following we will sketch the proof for $\Lambda = T$. \pause 
+	Soundness ("$\supseteq$") is straightforward. 
 
         \vspace{1.5cm}
          We denote $T \otimes T \otimes T + \Box p \to \Box_1\Box_2p \land \Box_2\Box_1p$ as $T_3m$
@@ -14,7 +15,7 @@
     
 \begin{frame}{Proof steps}
     \begin{itemize}
-        \item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$ 
+        \item Idea: create an infinite branching and infinite depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$ 
 		%\pause
         %\item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $F'$, i.e.
       %  for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(F')$ \pause
@@ -54,7 +55,7 @@
 	    \item Idea: create an infinite branching and depth Kripke tree with three relations (called $T_{\omega,\omega,\omega}^{r,m}$) with $Log(T_{\omega,\omega,\omega}^{r,m}) = T_3m$ 
 	    \item construct a neighbourhood product $N_{\omega}^r \times_n^+ N_{\omega}^r$ 
 		with $Log(N_\omega^r) = T$ s.t. there is surjective bounded morphism from $N_{\omega}^r \times_n^+ N_{\omega}^r$ to $N(T_{\omega,\omega,\omega}^{r,m})$
-        \item Keynote: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $N(F)$, i.e.
+        \item Note: For any Kripke frame $F = (W, R_1,...R_n)$, we can construct a neighborhood frame $N(F)$, i.e.
        for any $w \in W$: $\tau_i(w) = \{U \mid R_i(w) \subseteq U \subseteq W\}$ where $Log(F) = Log(N(F))$ 
 
 		\end{itemize}
@@ -185,7 +186,7 @@
 
 \begin{frame}{Definition of the neighborhood frame $N_w^r$}
     \begin{definition}
-        Let $T_{\omega}^{r} = (\mathbb{N}^*, R)$ be the infinite branching depth tree. Then
+        Let $T_{\omega}^{r} = (\mathbb{N}^*, R)$ be the infinite branching  and infinite depth tree. Then
 		\[
 		X = \{a_0a_1a_2... \in (\mathbb{N} \cup \star) \mid \exists N \in \mathbb{N} \mbox{ }\forall k\geq N: a_k = \star\}
 		\]
@@ -257,14 +258,14 @@
     \begin{definition}
         Let $T_{\omega}^{r} = (\mathbb{N}^*, R)$ be the infinite branching depth tree. Then
 		\[
-		X = \{a_0a_1a_2... \in (\mathbb{N} \cup \star) \mid \exists N \in \mathbb{N} \mbox{ }\forall k\geq N: a_k = \star\}
+		X = \{a_0a_1a_2... \in (\mathbb{N} \cup \star)^\omega \mid \exists N \in \mathbb{N} \mbox{ }\forall k\geq N: a_k = \star\}
 		\]
 		is the set of pseudo infinite sequences. 
 		Let $\alpha =a_0a_1a_2... \in X$. Then 
 		\[
 		U_k(\alpha) = \{\beta \in X \mid {\mbox{\emph{forg}}}(\alpha) R \mbox{}\mbox{\emph{forg}}(\beta) \mbox{ and } \alpha \mid_m = \beta \mid_m,	 \mbox{with } m = max(k,st(\alpha))\} 
 		\] 
-		where \emph{forg}($\alpha$) deletes all $\star$ and $ls(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$ \newline \newline \pause
+		where \emph{forg}($\alpha$) deletes all $\star$ and $st(\alpha) = min\{N \mid \forall k \geq N: a_k = \star\}$ \newline \newline \pause
 		\textcolor{red}{We define $N_\omega^r = (X,\tau)$ where $\tau: X \to 2^{2^X}$ with 
 			\[
 				\tau(\alpha) = \{U \subseteq X \mid \exists k \in \mathbb{N}: U_k(\alpha) \subseteq U\}
@@ -289,7 +290,7 @@
 
 
 \begin{frame}[t]{Surjective bounded morphism}
-	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = (\mathbb{N} \times \{0,1,2\}^*, \sigma_1, \sigma_2, \sigma)$.
+	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\})^*, \sigma_1, \sigma_2, \sigma)$.
 	\begin{theorem}
 	There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. 
 	\end{theorem}
@@ -319,7 +320,7 @@ Then $g(\alpha,\beta) = (3,1)(1,2) (h(2,7),0)$
 
 
 \begin{frame}{Surjective bounded morphism}
-	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = (\mathbb{N} \times \{0,1,2\}^*, \sigma_1, \sigma_2, \sigma)$ 
+	Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\})^*, \sigma_1, \sigma_2, \sigma)$ 
 	\begin{theorem}
 		
 		There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$.
@@ -345,7 +346,7 @@ Then $g(\alpha,\beta) = (3,1)(1,2) (h(2,7),0)$
 \begin{frame}{Surjective bounded morphism}
 
 
-$g(\alpha,\beta) = (3,2)(1,0) h((7,2),0) \textcolor{red}{R} \,(3,2)(1,0) h((7,2),0) \textcolor{red}{(h(6,7),0)}$
+$g(\alpha,\beta) = (3,2)(1,0) h((7,2),0) \textcolor{red}{R} \mbox{     }(3,2)(1,0) h((7,2),0) \textcolor{red}{(h(6,7),0)}$
 
 \[
 \begin{array}{ccccccc}
@@ -368,7 +369,6 @@ g'(\alpha,\beta) &= (3,2) & (1,0) & (h(2,7),0) & \star & \textcolor{red}{(h(6,7)
 \begin{frame}{Surjective bounded morphism}
 			Let $N_\omega^r \times_n^+ N_\omega^r = (X \times X, \tau_1, \tau_2, \tau)$ and $N(T_{\omega,\omega,\omega}^{r,m}) = ((\mathbb{N} \times \{0,1,2\} \cup \{\star\})^*, \sigma_1, \sigma_2, \sigma)$
 		\begin{theorem}
- be two 
 		There is a surjective bounded morphism $g: N_\omega^r \times_n^+ N_\omega^r \to N(T_{\omega,\omega,\omega}^{r,m})$. Note: $Log(N_w^r) = T$ and hence $N_w^r \times_n^+ N_w^r \in T \times_n^+ T$
 		\end{theorem}
 		Pick $m > max\{st(\alpha),st(\beta)\}$ and set $U:= U_m(\alpha) \times U_m(\beta)$. Then 
@@ -399,5 +399,9 @@ g'(\alpha,\beta) &= (3,2) & (1,0) & (h(2,7),0) & \star & \textcolor{red}{(h(6,7)
 \end{frame}
 
 \begin{frame}{Future works}
-	
+	\begin{itemize}
+		\item $K \times_n^+ K, K4 \times_n^+K4, ...$	\pause	
+		\item $T \times_n^+ D, K4 \times_n^+ D, S4 \times_n^+ K4...$
+	\end{itemize}
 \end{frame}
+
